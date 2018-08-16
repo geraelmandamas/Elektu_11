@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_margin="20dp"
+    >
+
+
+    <TextView
+        android:id="@+id/Tvnocuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/nocuenta"
+        android:textStyle="bold"
+        android:textSize="17.5sp" />
+
+    <TextView
+        android:id="@+id/TVRegistrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:text="@string/disfrutardelospremios"
+        android:textSize="17.5sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TVRegistrate"
+        android:layout_marginTop="15dp"
+
+        >
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/BtnLogin"
+
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="35dp"
+            android:background="@drawable/white_rounded2_button"
+            android:padding="12dp"
+            android:text="@string/butonLogin"
+            android:layout_marginBottom="15dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/BtnRegister"
+            android:layout_marginBottom="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/white_rounded2_button"
+            android:padding="12dp"
+            android:text="@string/Regístrate"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</RelativeLayout>

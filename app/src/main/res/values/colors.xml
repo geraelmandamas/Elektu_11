@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#bfbfbf</color>
+    <color name="colorAccent">#ffffff</color>
+
+
+
+
+    <color name="rosa">#FF4081</color>
+    <color name="white">#ffff</color>
+    <color name="black">#000000</color>
+    <color name="blue">#258db6</color>
+    <color name="blue2">#6796d2</color>
+
+    <color name="green">#4da776</color>
+    <color name="brown">#46453e</color>
+    <color name="greenBackground">#69F0AE</color>
+    <color name="yellow">#ff8503</color>
+    <color name="grey">#504e4e</color>
+    <color name="orange">#FF9800</color>
+    <color name="orange2">#d19336</color>
+    <color name="primary_color">#fff</color>
+    <color name="secondary_color">#fff</color>
+    <color name="color_geografia">#2753e4</color>
+    <color name="rojo">#D32F2F</color>
+    <color name="color_cine">#ad03af</color>
+    <color name="color_historia">#f2b50d</color>
+    <color name="color_arteyliteratura">#da0505</color>
+    <color name="color_cienciaynaturaleza">#5cbc09</color>
+    <color name="color_deporte">#fa7639</color>
+    <color name="greenOscuro">#388E3C</color>
+    <color name="azulLight">#03A9F4</color>
+    <color name="azulDark">#0288D1</color>
+    <color name="azulCyan">#00BCD4</color>
+</resources>

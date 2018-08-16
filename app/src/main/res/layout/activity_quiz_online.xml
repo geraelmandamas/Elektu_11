@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".QuizOnlineActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/RL42"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="7dp"
+            android:id="@+id/IVPlayer1"
+            android:src="@drawable/ic_person_white"
+            android:background="@drawable/boton_transparente_linea_exterior_verde"
+            android:layout_marginTop="4dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/IVPlayer1"
+            android:layout_alignParentTop="true"
+            android:textStyle="bold"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"
+            android:text="Player1"
+            android:id="@+id/TVPlayer1"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/TVPuntosPlayer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="7dp"
+            android:layout_toEndOf="@+id/IVPlayer1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:text="0"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/IVPlayer2"
+            android:background="@drawable/boton_redondo_transparente_linea_exterior_roja"
+            android:layout_marginRight="7dp"
+            android:src="@drawable/ic_person_white"
+            android:layout_marginTop="4dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/IVPlayer2"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/TVPlayer2"
+            android:textStyle="bold"
+            android:text="Player2"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/TVPuntosPlayer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/IVPlayer2"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:text="0"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/azulDark"
+            android:id="@+id/TV2Tiempo"
+            android:text="TIME LEFT"
+            android:textSize="10sp"
+            android:textStyle="bold"
+
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="7dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/azulLight"
+            android:id="@+id/TV1Tiempo"
+            android:text="30"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:layout_below="@id/TV2Tiempo"
+
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="330dp"
+        android:layout_height="135dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/box_pregunta"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/RLtextPregunta"
+
+        android:layout_below="@id/RL42"
+        >
+
+        <TextView
+            android:id="@+id/textPregunta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="¿Quién nació en 1994?"
+            android:layout_marginStart="7dp"
+            android:textColor="@color/white"
+            android:layout_marginEnd="7dp"
+            android:textSize="19sp"
+            android:textStyle="bold"
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/finalizarRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/RlBotones"
+        android:layout_alignParentStart="true"
+        >
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/BtnGetRecompensa"
+
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/white_grey_border3_button"
+            android:padding="12dp"
+            android:text="@string/Finalizar"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/RLadd"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/BtnGetRecompensa"
+            android:layout_marginTop="4dp"
+            android:layout_height="wrap_content">
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                ads:adSize="SMART_BANNER"
+                ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+            </com.google.android.gms.ads.AdView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/RLtextPregunta"
+        android:layout_margin="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/RlBotones"
+        >
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/Btn1"
+
+            android:layout_width="145dp"
+            android:layout_height="90dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/button"
+            android:padding="12dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:onClick="btn1"
+
+            android:text="@string/maluma"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/Btn2"
+            android:layout_width="145dp"
+            android:layout_height="90dp"
+            android:layout_below="@id/Btn1"
+            android:layout_marginTop="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="30dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button"
+            android:padding="12dp"
+            android:text="@string/Nikimi"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:onClick="btn2"
+
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            />
+
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/Btn3"
+            android:layout_width="145dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/button"
+            android:padding="12dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="5dp"
+            android:text="@string/Nikimi"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:onClick="btn3"
+            android:layout_below="@id/Btn2"
+
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+
+            />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/Btn4"
+            android:layout_width="145dp"
+            android:layout_height="90dp"
+            android:layout_below="@id/Btn1"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/button"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="5dp"
+            android:padding="12dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:onClick="btn4"
+
+            android:text="@string/Nikimi"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginBottom="15dp"
+
+            />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

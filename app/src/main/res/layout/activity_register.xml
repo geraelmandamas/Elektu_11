@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@null"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:paddingLeft="25dp"
+
+        android:paddingRight="25dp"
+
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:textColorLink="@color/white"
+            android:hint="@string/NickName"
+            android:id="@+id/usernamehint"/>
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="@string/emailHint"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:textColorLink="@color/white"
+            android:id="@+id/EmailHint"/>
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="@string/PasswordHint"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:textColorLink="@color/white"
+            android:id="@+id/PasswordHint"/>
+
+
+
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="300dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:text="@string/butonRegister"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:foreground="?android:attr/selectableItemBackground"
+
+            android:textAllCaps="false"
+            android:id="@+id/ButtonRegister"
+            android:padding="12dp"
+            android:background="@drawable/button"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:text="@string/yatinesCuenta"
+                android:id="@+id/Link_SignUp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:gravity="center"
+
+                android:textColor="@color/white"
+                android:textColorLink="@color/white"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_marginLeft="5dp"
+                android:text="@string/ingresa"
+                android:id="@+id/Link_SignUpTextLink"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+    <ProgressBar
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/ProgressBarLogin"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "747438151025",
+    "firebase_url": "https://elektu-42c25.firebaseio.com",
+    "project_id": "elektu-42c25",
+    "storage_bucket": "elektu-42c25.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:747438151025:android:74c45224d1740be7",
+        "android_client_info": {
+          "package_name": "com.epifi.elektu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "747438151025-ma773u2cdg53fr9bba7k21697g61odio.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGOeJFO5_3B2CH3UApJA0s1dOxu7x-n1E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

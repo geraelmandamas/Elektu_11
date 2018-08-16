@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/LayoutMenu"
+    >
+
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="200dp"
+        android:background="@drawable/boton_redondo_negro"
+        >
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_store_white"
+            android:id="@+id/Btnstore"
+            android:layout_centerHorizontal="true"
+            />
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_volume_white"
+            android:id="@+id/Btnvolume"
+            android:layout_below="@id/Btnstore"
+            android:layout_centerHorizontal="true"
+            />
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/Btnsettings"
+            android:layout_below="@id/Btnvolume"
+            android:src="@drawable/ic_settings_white"
+            android:layout_centerHorizontal="true"
+            />
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_info_white_correct"
+            android:layout_below="@id/Btnsettings"
+            android:id="@+id/Btninfo"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
